@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eetu Pärnänen - CV</title>
-    <link rel="stylesheet" href="style.css/">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Eetu Pärnänen - Ansioluettelo</h1>
         <nav>
             <ul>
-                <li><a href="#etusivu">Etusivu</a></li>
-                <li><a href="#tietoa-minusta">Tietoa minusta</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+                <li><a href="javascript:void(0);" onclick="näytäOsio('etusivu')">Etusivu</a></li>
+                <li><a href="javascript:void(0);" onclick="näytäOsio('tietoa-minusta')">Tietoa minusta</a></li>
+                <li><a href="javascript:void(0);" onclick="näytäOsio('cv')">CV</a></li>
+                <li><a href="javascript:void(0);" onclick="näytäOsio('yhteystiedot')">Yhteystiedot</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        
         <section id="etusivu">
             <h2>Tervetuloa</h2>
             <p>Eetu Aaron Pärnänen
@@ -29,9 +30,8 @@
          
         </section>
 
-    </main>
-    <main>
-        <section id="tietoa-minusta">
+
+          <section id="tietoa-minusta">
             <h2>Tietoa minusta</h2>
             <p>
                 Olen 21-vuotias mies, tällä hetkellä opiskelen IT-Tradenomiksi, sekä teen keikkaluonteista työtä.
@@ -43,20 +43,63 @@
             <img src="IMG-20230914-WA0025.jpg" alt="metsäkuva">
 
         </section>
-    </main>
-    <main>
+    
+      
         <section id="cv">
+            <h2>CV</h2>
+            <p>
+                <h2>Koulutus</h2>
+
+                -	Espoon yhteislyseon lukio syksy 2018 – talvi 2021 <br>
+                -	Juvanpuiston koulun ylä-aste 2015-2018 <br>
+                -	Juvanpuiston koulun ala-aste 2009-2015 <br>
+
+                <h2>työkokemus</h2>
+                -	Adecco Finland Oy/DHL varastotyöntekijä 23.2.2023 – jatkuu
+                    Määrä-aikainen työ: keräily, pakkaus, hyllytys sekä monipuoliset trukin hallinta työt <br>
+                -	Suomen Transval Oy varastotyöntekijä  25.4.2022 – 23.9.2022
+                 	Määrä-aikainen työ: keräily, pakkaus, TV-asennus, purku <br>
+                -	Suomen Transval Oy varastotyöntekijä 7.6.2021-10.8.2021
+                	Määrä-aikainen työ: keräily, pakkaus, TV-asennus, purku <br>
+                -	Pohjois-Espoon Ponsi Ry jalkapallovalmentaja 2020 – 1.8.2021
+                    Määrä-aikainen työ: Joukkuevalmentaja, leiriohjaaja, turnaus henkilökunta <br>
+                -	Paino Pärnäset Oy 2019 – jatkuu
+                    Perhe yritys: jälkikäsittely, painotyö
+                
+                
+            </p>
 
         </section>
-    </main>
-    <main>
+          
         <section id="yhteystiedot">
+            <h2>Yhteystiedot</h2>
+            <p>Ota yhteyttä:</p>
+            <ul>
+                <li><a href="mailto:eetuparnanen@gmail.com">Sähköposti</a></li>
+                <li><a href="https://www.instagram.com/eetu_aaron/?next=%2F">Instagram</a></li>
+            </ul>
+                <p>+358447744472</p>
+            <img src="IMG20221201163146.jpg" alt="Taustakuva">
 
         </section>
     </main>
     <footer>
         <p>&copy; 2023 Eetu Pärnänen</p>
     </footer>
-<p></p>
+    <script>
+        function näytäOsio(osioId) {
+            let osiot =document.querySelectorAll('section');
+            osiot.forEach(function(osio) {
+                osio.style.display = 'none';
+            });
+
+            let näytettäväOsio = document.getElementById(osioId);
+            if (näytettäväOsio) {
+                näytettäväOsio.style.display ='block';
+            }
+            
+
+        }
+    </script>
 </body>
 </html>
