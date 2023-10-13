@@ -1,0 +1,170 @@
+body, h1, h2, p, ul, li {
+    margin:0;
+    padding:0;
+}
+
+
+body {
+    background-color: #FFFFFF;
+    color: #007ACC;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color:#007ACC;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+
+}
+
+
+
+nav {
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #555555;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007ACC;
+    font-weight: bold;
+}
+
+nav ul li a.valittu {
+    color:black
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+    font-weight: bold;
+}
+
+h1 {
+    font-size:35px;
+    margin-top: 50px;
+}
+
+h1, h2, a {
+    color:black
+}
+
+footer {
+    background-color: #555555;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    color: #007ACC;
+    
+}
+
+
+h2 {
+    font-size: 30px;
+}
+
+
+section {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 20px;
+    display: none;
+}
+
+
+section a {
+    color: #007ACC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+section a:hover,
+section a:focus,
+section a:active {
+    text-decoration: underline;
+}
+
+.sisalto {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.vasen-osio {
+    width:50%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.oikea-osio {
+    width: 50%;
+}
+
+.sisalto .teksti {
+    flex: 1;
+}
+
+.sisalto .kuva {
+    flex: 1;
+    text-align: right;
+}
+
+#etusivu .sisalto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#etusivu .vasen-osio {
+    width: 45%; 
+}
+
+#etusivu .oikea-osio {
+    width: 45%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+}
+#etusivu .oikea-osio img {
+    max-width: 500px; 
+    height: auto;
+}
+#tietoa-minusta .kuva img {
+    width: 400px;
+    height: auto;
+}
+
+
+#taustakuva {
+    width: 100%;
+    height: auto;
+    position: center bottom;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+.pieni-kuva {
+    max-width: 100%;
+    height: auto;
+}
+
