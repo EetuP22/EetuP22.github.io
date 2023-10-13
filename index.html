@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eetu Pärnänen - CV</title>
+    <link rel="stylesheet" href="tyyli.css">
+</head>
+<body>
+    <header>
+        <h1>Eetu Pärnänen - Ansioluettelo</h1>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" class="valittu" onclick="näytäOsio('etusivu')">Etusivu</a></li>
+                <li><a href="javascript:void(0);" onclick="näytäOsio('tietoa-minusta')">Tietoa minusta</a></li>
+                <li><a href="javascript:void(0);" onclick="näytäOsio('cv')">CV</a></li>
+                <li><a href="javascript:void(0);" onclick="näytäOsio('yhteystiedot')">Yhteystiedot</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section id="etusivu" style="display: block;">
+            <h2>Tervetuloa</h2>
+            <div class="sisalto">
+            <div class="vasen-osio">            
+                <p> Yleistä: <br>
+                    Nimi: Eetu Aaron Pärnänen. <br>
+                Syntynyt: 02.10.2002. <br>
+                Opiskelee: It-Tradenomi.
+                </p>
+            </div>
+            <div class="oikea-osio">
+            <img src="20231009_155912.jpg" alt="Omakuva 1">
+            </div>
+            </div>
+         
+        </section>
+
+
+          <section id="tietoa-minusta">
+            <h2>Tietoa minusta</h2>
+            <div class="sisalto">
+            <p>
+                Olen 21-vuotias mies, tällä hetkellä opiskelen IT-Tradenomiksi, sekä teen keikkaluonteista työtä.
+                Olen innokas oppija ja aina avoinna uusille haasteille.
+                Olen erittäin motivoitunut kehittämään itseäni ja keräämään uutta tietotaitoa.
+                Vahvuuksiani on kyky omaksua asiat nopeasti, vastuuntunto, avoin mieli, kyky motivoida itseä, sekä osaan toimia monipuolisesti eri ihmisten kanssa.
+                Vapaa ajalla urheilen monipuolisesti, luen ja opiskelen, sekä katson elokuvia. Tulevaisuudessa näen itseni työskentelevän IT-alalla, mutta ennen sitä tulee minun suorittaa opinnot loppuun ja kerryttää tietotaitoa ja kokemusta.
+            </p>
+            <div class="kuva">
+            <img src="IMG-20230914-WA0025.jpg" alt="metsäkuva">
+            </div>
+            </div>
+
+        </section>
+    
+      
+        <section id="cv">
+            <h2>CV</h2>
+            <div class="koulutus">
+                <h2>Koulutus</h2>
+                <p>
+                -	Espoon yhteislyseon lukio syksy 2018 – talvi 2021 <br>
+                -	Juvanpuiston koulun ylä-aste 2015-2018 <br>
+                -	Juvanpuiston koulun ala-aste 2009-2015 <br>
+                </p>
+                </div>
+                <div class="tyokokemus">
+                <h2>työkokemus</h2>
+                <p>
+                -	Adecco Finland Oy/DHL varastotyöntekijä 23.2.2023 – jatkuu <br>
+                    Määrä-aikainen työ: keräily, pakkaus, hyllytys sekä monipuoliset trukin hallinta työt. <br>
+                -	Suomen Transval Oy varastotyöntekijä  25.4.2022 – 23.9.2022 <br>
+                 	Määrä-aikainen työ: keräily, pakkaus, TV-asennus, purku. <br>
+                -	Suomen Transval Oy varastotyöntekijä 7.6.2021-10.8.2021 <br>
+                	Määrä-aikainen työ: keräily, pakkaus, TV-asennus, purku. <br>
+                -	Pohjois-Espoon Ponsi Ry jalkapallovalmentaja 2020 – 1.8.2021 <br>
+                    Määrä-aikainen työ: Joukkuevalmentaja, leiriohjaaja, turnaus henkilökunta. <br>
+                -	Paino Pärnäset Oy 2019 – jatkuu <br>
+                    Perhe yritys: jälkikäsittely, painotyö.
+                    </p>
+                </div>
+                
+
+        </section>
+          
+        <section id="yhteystiedot">
+            <h2>Yhteystiedot</h2>
+            <p>Ota yhteyttä:</p>
+            <ul>
+                <li><a href="mailto:eetuparnanen@gmail.com">Sähköposti</a></li>
+                <li><a href="https://www.instagram.com/eetu_aaron/?next=%2F">Instagram</a></li>
+            </ul>
+                <p>Puhelimitse: +358447744472</p>
+            <img id="taustakuva" src="IMG20221201163146.jpg" alt="Taustakuva">
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Eetu Pärnänen</p>
+    </footer>
+    <script>
+        function näytäOsio(osioId) {
+            let osiot =document.querySelectorAll('section');
+            osiot.forEach(function(osio) {
+                osio.style.display = 'none';
+            });
+
+            let näytettäväOsio = document.getElementById(osioId);
+            if (näytettäväOsio) {
+                näytettäväOsio.style.display ='block';
+            }
+
+            let linkit = document.querySelectorAll('nav a');
+            linkit.forEach(function(link) {
+                link.classList.remove('valittu');
+            });
+
+            event.target.classList.add('valittu');
+        }
+
+        
+    </script>
+</body>
+</html>
