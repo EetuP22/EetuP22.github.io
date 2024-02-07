@@ -62,6 +62,8 @@ h1, h2, a {
 }
 
 footer {
+    position: relative;
+    bottom: 0;
     background-color: #555555;
     color: #FFFFFF;
     text-align: center;
