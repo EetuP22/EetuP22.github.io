@@ -144,7 +144,7 @@ section a:active {
 }
 #etusivu .oikea-osio img {
     max-width: 100%; 
-    height: auto;
+    height: auto;       
 }
 #tietoa-minusta .kuva img {
     width: 400px;
