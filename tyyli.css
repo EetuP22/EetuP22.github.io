@@ -171,3 +171,9 @@ section a:active {
     height: auto;
 }
 
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    #tietoa-minusta .kuva img {
+        width: 100%;
+        height: auto;
+    }
+}
